@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <script src="encriptado.js"></script>
+    <link rel="stylesheet" href="Encriptado_2.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>Encriptador</h1>
+    </nav>
+   <section>
+    <div class="contenedor">
+        <input type="text" name="" id="input" maxlength="300" placeholder="Ingresar el texto que se quiere encriptar" value=""
+        autofocus>
+    </div>
+    <div class="contenedor1">
+        <div class="resultado" id="resultado">
+            <h1>
+                 <!-- No borrar h1, estos albergan el resultado de las encriptaciones -->
+            </h1>
+        </div>
+        
+    </div>
+   </section> 
+   <section>
+        <div class="botones">
+            <button type="submit" id="btn" onclick="encriptar(input.value); borrarInput()">Encriptar</button>
+            <button type="submit" id="btn1" onclick="desencriptar(input.value); borrarInput()">Desencriptar</button>
+            <!-- <script>alert("a")</script> -->
+        </div>
+   </section>
+</body>
+</html>

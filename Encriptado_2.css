@@ -1,0 +1,164 @@
+
+/*Configuración nueva letra*/
+@font-face {
+    font-family: 'Nice Sugar';
+    src: url('Nice Sugar.ttf') format('truetype');
+}
+
+
+.navbar{
+    background-color: black;
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 5px;
+}
+h1{
+    display: flex;
+    color: aliceblue ;
+    font-family: 'Nice Sugar', sans-serif;
+    justify-content: center;
+}
+body{
+    background-color: #363636;
+    
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+/* Configuracion de los contenedores donde se encuentra el texto*/
+
+.contenedor{
+    background-color: black;
+    display: flex;
+    width: 45%;
+    height: 300px;
+    border-radius: 50px;
+}
+.contenedor1{
+    background-color: black;
+    display: absolute;
+    flex-direction: row;
+    width: 45%;
+    height: 300px;
+    border-radius: 50px;
+}
+
+/*Configuración de los aspectos visibles del input tipo text*/
+#input {
+    color: white;
+    display: flex;
+    opacity: 10;
+    background-color: transparent;
+    border-color: transparent;
+    width: 100%;
+    height: 50px;
+    font-family: 'Nice Sugar', sans-serif;
+    margin-left: 30px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-right: 20px;
+    white-space: pre-wrap;
+    border-radius: 50px;
+}
+/*Configuracion del resultado al encriptar el mensaje*/
+
+.resultado {
+    word-wrap: break-word;
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+    color: white;
+    opacity: 0.5;
+    font-family: 'Nice Sugar', sans-serif;
+    
+
+}
+
+/*///////////////////////*/
+/*Configuración de los aspectos visibles de los botones, su color, su hover, etc.*/
+.botones    {
+    position: absolute;
+    margin-top: -100px;
+    display: flex;
+    margin-left: 280px;
+    font-family: 'Nice Sugar', sans-serif;
+    ;
+}
+
+#btn {
+    width: 300px;
+    height: 2.3em;
+    margin: 0.5em;
+    background: #8739F9;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Nice Sugar', sans-serif;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#btn1 {
+    width: 300px;
+    height: 2.3em;
+    margin: 0.5em;
+    background: #8739F9;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Nice Sugar', sans-serif;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+#btn2{
+    display: absolute;
+    margin-left: 490px;
+    margin-top: -10px;
+    border-radius: 8px;
+    background-image: url(copiar.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 5%;
+    height: 30px;
+    opacity: 0.5;
+}
+
+button:hover {
+    color: black;
+}
+
+button:after {
+    content: "";
+    background: #C651CD;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+
+
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
